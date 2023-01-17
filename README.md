@@ -51,29 +51,33 @@ mvn archetype:generate \
 
 ## 发布项目
 
-修改 `pom.xml` 的 `distributionManagement` 节点，替换为自己在 `settings.xml` 中 配置的 `server`
+修改 `pom.xml` 的 `distributionManagement` 节点，替换为自己在 `settings.xml` 中 配置的 `server` 节点，
+然后执行 `mvn clean deploy`
 
 举例：
 
 `settings.xml`
 
 ```xml
+
 <servers>
-  <server>
-    <id>snapshots</id>
-    <username>yyy</username>
-    <password>yyy</password>
-  </server>
-  <server>
-    <id>releases</id>
-    <username>xxx</username>
-    <password>xxx</password>
-  </server>
+    <server>
+        <id>snapshots</id>
+        <username>yyy</username>
+        <password>yyy</password>
+    </server>
+    <server>
+        <id>releases</id>
+        <username>xxx</username>
+        <password>xxx</password>
+    </server>
 </servers>
 ```
+
 `pom.xml`
 
 ```xml
+
 <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
@@ -81,7 +85,7 @@ mvn archetype:generate \
     </snapshotRepository>
     <repository>
         <id>releases</id>
-      <url>http://xxx/releases</url>
+        <url>http://xxx/releases</url>
     </repository>
 </distributionManagement>
 ```
