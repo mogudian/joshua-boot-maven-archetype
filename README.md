@@ -59,7 +59,6 @@ mvn archetype:generate \
 `settings.xml`
 
 ```xml
-
 <servers>
     <server>
         <id>snapshots</id>
@@ -77,7 +76,6 @@ mvn archetype:generate \
 `pom.xml`
 
 ```xml
-
 <distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
