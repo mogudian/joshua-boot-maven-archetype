@@ -11,16 +11,16 @@ Spring Boot 2 多模块的 maven 脚手架/模板，可快速初始化工程代�
 
 ## 集成依赖
 
-| 依赖           | 版本号           | 说明  |
---------------|---------------|-----
-spring boot | 2.3.4.RELEASE |  |
-fastjson | 1.2.73        |  |
-commons-lang3 | 3.11          |  |
-commons-collections4 | 4.4           |  |
-guava | 29.0-jre      |  |
-mybatis | 3.55          |  |
-fluent-mybatis | 1.8.3         |  |
-lombok | 1.8.12        |  |
+| 依赖                  | 版本号           | 说明  |
+|----------------------|---------------|-----|
+| spring boot          | 2.3.4.RELEASE |     |
+| fastjson             | 1.2.73        |     |
+| commons-lang3        | 3.11          |     |
+| commons-collections4 | 4.4           |     |
+| guava                | 29.0-jre      |     |
+| mybatis              | 3.55          |     |
+| fluent-mybatis       | 1.8.3         |     |
+| lombok               | 1.8.12        |     |
 
 ## 使用前准备
 
